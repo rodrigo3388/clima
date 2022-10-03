@@ -23,11 +23,8 @@ try {
       );
       const json = await request.json();
 
+      setWeather(json);
       
-      setTimeout(() =>{
-          
-          setWeather(json);
-      },2000);
       console.log(json);
 
 } catch (error) {
